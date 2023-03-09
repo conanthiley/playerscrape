@@ -19,16 +19,9 @@ app.use(
   })
 );
 
-// First MongoDB database
-// const nflDBConnection = mongoose.createConnection(
-//   "mongodb+srv://nicholasch24:hunter1224@cluster0.uuyxsu9.mongodb.net/nfl",
-//   {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   }
-// );
+
 const nflDBConnection =
-  "mongodb+srv://nicholasch24:hunter1224@cluster0.uuyxsu9.mongodb.net/nfl";
+  "mongodb+srv://nicholasch24:<password>@cluster0.uuyxsu9.mongodb.net/nfl";
 const nflClient = new MongoClient(nflDBConnection);
 
 // mongoose.connect(nflDBConnection).catch((err) => console.log(err));
@@ -52,7 +45,7 @@ const nflPlayerDBModel = mongoose.model("players", nflPlayerDBSchema);
 
 // Second MongoDB database
 // const nbaDBConnection = mongoose.createConnection(
-//   "mongodb+srv://nicholasch24:hunter1224@cluster0.uuyxsu9.mongodb.net/nba",
+//   "mongodb+srv://nicholasch24:<password>@cluster0.uuyxsu9.mongodb.net/nba",
 //   {
 //     useNewUrlParser: true,
 //     useUnifiedTopology: true,
@@ -60,7 +53,7 @@ const nflPlayerDBModel = mongoose.model("players", nflPlayerDBSchema);
 // );
 /////////////
 // const nbaDBConnection =
-//   "mongodb+srv://nicholasch24:hunter1224@cluster0.uuyxsu9.mongodb.net/nba";
+//   "mongodb+srv://nicholasch24:<password>@cluster0.uuyxsu9.mongodb.net/nba";
 // const nbaClient = new MongoClient(nbaDBConnection);
 // // Define a schema and model for the second database
 // const nbaTeamDBSchema = new mongoose.Schema(
@@ -82,7 +75,7 @@ const nflPlayerDBModel = mongoose.model("players", nflPlayerDBSchema);
 //   nbaPlayerDBSchema
 // );
 const nbaDBConnection =
-  "mongodb+srv://nicholasch24:hunter1224@cluster0.uuyxsu9.mongodb.net/nba";
+  "mongodb+srv://nicholasch24:<password>@cluster0.uuyxsu9.mongodb.net/nba";
 const nbaClient = new MongoClient(nbaDBConnection);
 
 // mongoose
