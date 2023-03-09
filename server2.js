@@ -21,14 +21,14 @@ app.use(
 
 // First MongoDB database
 // const nflDBConnection = mongoose.createConnection(
-//   "mongodb+srv://nicholasch24:hunter1224@cluster0.uuyxsu9.mongodb.net/nfl",
+//   "mongodb+srv://nicholasch24:<password>@cluster0.uuyxsu9.mongodb.net/nfl",
 //   {
 //     useNewUrlParser: true,
 //     useUnifiedTopology: true,
 //   }
 // );
 const nflDBConnection =
-  "mongodb+srv://nicholasch24:hunter1224@cluster0.uuyxsu9.mongodb.net/nfl";
+  "mongodb+srv://nicholasch24:<password>@cluster0.uuyxsu9.mongodb.net/nfl";
 // Define a schema and model for the first database
 const nflTeamDBSchema = new mongoose.Schema(
   {
@@ -50,7 +50,7 @@ const nflPlayerDBModel = nflDBConnection.model("players", nflPlayerDBSchema);
 
 // Second MongoDB database
 const nbaDBConnection = mongoose.createConnection(
-  "mongodb+srv://nicholasch24:hunter1224@cluster0.uuyxsu9.mongodb.net/nba",
+  "mongodb+srv://nicholasch24:<password>@cluster0.uuyxsu9.mongodb.net/nba",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
