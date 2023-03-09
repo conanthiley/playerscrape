@@ -25,7 +25,7 @@ print(len(players))
 # print(link1)
 # links = [players[0],players[200],players[300]]
 # # ----------------------------------------------------------------------------------
-# cluster = MongoClient("mongodb+srv://nicholasch24:hunter1224@cluster0.uuyxsu9.mongodb.net/nfl")
+# cluster = MongoClient("mongodb+srv://nicholasch24:<password>@cluster0.uuyxsu9.mongodb.net/nfl")
 # collection = cluster["playerData"]
 # # ----------------------------------------------------------------------------------
 for link in links:
