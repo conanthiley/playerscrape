@@ -16,10 +16,10 @@ app.use(
 );
 
 const uri =
-  "mongodb+srv://nicholasch24:hunter1224@cluster0.uuyxsu9.mongodb.net/nfl";
+  "mongodb+srv://nicholasch24:<password>@cluster0.uuyxsu9.mongodb.net/nfl";
 
 const uriNBA =
-  "mongodb+srv://nicholasch24:hunter1224@cluster0.uuyxsu9.mongodb.net/nba";
+  "mongodb+srv://nicholasch24:<password>@cluster0.uuyxsu9.mongodb.net/nba";
 
 const client = new MongoClient(uri);
 mongoose.connect(uri).catch((err) => console.log(err));
